@@ -147,19 +147,7 @@ $range = 'Sheet6!C15:E15';
                 </div>
             </div>
         </div>
-        <div class="col-md-4">
-            <div class="card card-dark bg-dark">
-                <div class="card-body curves-shadow">
-                    <h1><?= ' ' . number_format($penghasilan_akun['penghasilan_akun']); ?></h1>
-                    <h2 class="op-8">Jumlah Akun</h2>
-                    <div class="pull-right">
-                        <h3 class="fw-bold op-8">
-                            <hr>
-                        </h3>
-                    </div>
-                </div>
-            </div>
-        </div>
+        
     </div>
 
 
