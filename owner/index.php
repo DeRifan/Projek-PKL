@@ -34,7 +34,7 @@ $range = 'Sheet6!C15:E15';
 </div>
 <div class="page-inner mt--5">
     <div class="row">
-        <a href="report2.php">
+        <a href="#">
         <div class="col-sm-6 col-md-3">
             <div class="card card-stats card-round">
                 <div class="card-body ">
@@ -57,7 +57,7 @@ $range = 'Sheet6!C15:E15';
         </div>
         <div class="col-sm-6 col-md-3">
             <div class="card card-stats card-round">
-                <a href="order.php">
+                <a href="#">
                 <div class="card-body">
                     <div class="row align-items-center">
                         <div class="col-icon">
@@ -78,7 +78,7 @@ $range = 'Sheet6!C15:E15';
         </div>
         <div class="col-sm-6 col-md-3">
             <div class="card card-stats card-round">
-                <a href="akun.php">
+                <a href="#">
                 <div class="card-body">
                     <div class="row align-items-center">
                         <div class="col-icon">
@@ -99,7 +99,7 @@ $range = 'Sheet6!C15:E15';
         </div>
         <div class="col-sm-6 col-md-3">
             <div class="card card-stats card-round">
-                <a href="report.php">
+                <a href="#">
                 <div class="card-body">
                     <div class="row align-items-center">
                         <div class="col-icon">
