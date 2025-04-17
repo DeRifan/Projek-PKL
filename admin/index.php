@@ -15,8 +15,6 @@ $penghasilan_profit = mysqli_fetch_assoc($query4);
 $query5 = mysqli_query($conn, "SELECT SUM(jml_order) as penghasilan_order FROM report WHERE jml_order");
 $penghasilan_order = mysqli_fetch_assoc($query5);
 
-$query6 = mysqli_query($conn, "SELECT SUM(jml_akun) as penghasilan_akun FROM report WHERE jml_akun");
-$penghasilan_akun = mysqli_fetch_assoc($query6);
 
 $spreadsheetId = ('12h-sded6jc96OZ83r6SJzBZcO3zOzffk5L5htQwHtJM');
 $range = 'Sheet6!C15:E15';
