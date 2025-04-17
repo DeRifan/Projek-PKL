@@ -8,18 +8,6 @@ setlocale(LC_TIME, 'id_ID.utf8');
 
 $query = mysqli_query($conn, "SELECT COUNT(id_profit) as rating FROM profit");
 $rating = mysqli_fetch_assoc($query);
-
-$query4 = mysqli_query($conn, "SELECT SUM(jml_profit) as penghasilan_profit FROM report");
-$penghasilan_profit = mysqli_fetch_assoc($query4);
-
-$query5 = mysqli_query($conn, "SELECT SUM(jml_order) as penghasilan_order FROM report WHERE jml_order");
-$penghasilan_order = mysqli_fetch_assoc($query5);
-
-$query6 = mysqli_query($conn, "SELECT SUM(jml_akun) as penghasilan_akun FROM report WHERE jml_akun");
-$penghasilan_akun = mysqli_fetch_assoc($query6);
-
-$spreadsheetId = ('12h-sded6jc96OZ83r6SJzBZcO3zOzffk5L5htQwHtJM');
-$range = 'Sheet6!C15:E15';
 ?>
 
 <div class="panel-header bg-primary-gradient">
@@ -118,48 +106,7 @@ $range = 'Sheet6!C15:E15';
             </div>
         </div>
     </div>
-
-    <div class="row">
-        <div class="col-lg-4 col-sm-6 col-xs-12">
-            <a href=""></a>
-            <div class="card card-dark bg-dark-gradient">
-                <div class="card-body skew-shadow">
-                    <h1><?= 'Rp ' . number_format($penghasilan_profit['penghasilan_profit']); ?></h1>
-                    <h2 class="op-8">Penghasilan Profit</h2>
-                    <div class="pull-right">
-                        <h3 class="fw-bold op-8">
-                            <hr>
-                        </h3>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-4">
-            <div class="card card-dark bg-dark-gradient">
-                <div class="card-body bubble-shadow">
-                    <h1><?= ' ' . number_format($penghasilan_order['penghasilan_order']); ?></h1>
-                    <h2 class="op-8">Jumlah Order</h2>
-                    <div class="pull-right">
-                        <h3 class="fw-bold op-8">
-                            <hr>
-                        </h3>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-4">
-            <div class="card card-dark bg-dark">
-                <div class="card-body curves-shadow">
-                    <h1><?= ' ' . number_format($penghasilan_akun['penghasilan_akun']); ?></h1>
-                    <h2 class="op-8">Jumlah Akun</h2>
-                    <div class="pull-right">
-                        <h3 class="fw-bold op-8">
-                            <hr>
-                        </h3>
-                    </div>
-                </div>
-            </div>
-        </div>
+                    
     </div>
 
 
